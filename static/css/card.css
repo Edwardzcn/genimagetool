@@ -1,0 +1,52 @@
+.card img {
+    width: 100%;
+}
+
+#myform {
+    position: absolute;
+    top: 38%;
+    right: 8%;
+    width: 30%;
+}
+
+.card {
+    /* 这里需要调整 */
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 18px;
+    vertical-align: top;
+}
+
+@media (min-width: 576px) {
+    #myform {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    #myform {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    #myform {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #myform {
+        font-size: 20px;
+    }
+}
