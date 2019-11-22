@@ -1,0 +1,49 @@
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+111.8.49.192 - - [22/Nov/2019 12:20:14] "[37mGET / HTTP/1.1[0m" 200 -
+111.8.49.192 - - [22/Nov/2019 12:20:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+111.8.49.192 - - [22/Nov/2019 12:20:37] "[37mGET /login HTTP/1.1[0m" 200 -
+111.8.49.192 - - [22/Nov/2019 12:20:37] "[37mGET /static/css/card.css HTTP/1.1[0m" 200 -
+111.8.49.192 - - [22/Nov/2019 12:20:37] "[37mGET /static/images/bg_heng.jpg HTTP/1.1[0m" 200 -
+111.8.49.192 - - [22/Nov/2019 12:21:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+111.8.49.192 - - [22/Nov/2019 12:21:10] "[37mGET /genimage/0001 HTTP/1.1[0m" 200 -
+111.8.49.192 - - [22/Nov/2019 12:21:10] "[37mGET /static/images/gen0001.jpg HTTP/1.1[0m" 200 -
+111.8.49.192 - - [22/Nov/2019 12:21:14] "[37mGET /static/images/gen0001.jpg HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:21:36] "[37mGET /login HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:21:36] "[37mGET /static/css/card.css HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:21:36] "[37mGET /static/images/bg_heng.jpg HTTP/1.1[0m" 200 -
+175.0.171.36 - - [22/Nov/2019 12:21:56] "[37mGET /login HTTP/1.1[0m" 200 -
+175.0.171.36 - - [22/Nov/2019 12:21:57] "[37mGET /static/css/card.css HTTP/1.1[0m" 200 -
+175.0.171.36 - - [22/Nov/2019 12:21:57] "[37mGET /static/images/bg_heng.jpg HTTP/1.1[0m" 200 -
+183.192.164.85 - - [22/Nov/2019 12:22:10] "[37mGET /genimage/0001 HTTP/1.1[0m" 200 -
+175.0.171.36 - - [22/Nov/2019 12:22:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+175.0.171.36 - - [22/Nov/2019 12:22:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+175.0.171.36 - - [22/Nov/2019 12:22:21] "[37mGET /genimage/0002 HTTP/1.1[0m" 200 -
+175.0.171.36 - - [22/Nov/2019 12:22:21] "[37mGET /static/images/gen0002.jpg HTTP/1.1[0m" 200 -
+175.0.171.36 - - [22/Nov/2019 12:22:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+175.0.171.36 - - [22/Nov/2019 12:23:29] "[37mGET /login HTTP/1.1[0m" 200 -
+175.0.171.36 - - [22/Nov/2019 12:23:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+106.18.147.130 - - [22/Nov/2019 12:23:43] "[37mGET /login HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:23:43] "[37mGET /static/images/bg_heng.jpg HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:23:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+106.18.147.130 - - [22/Nov/2019 12:23:54] "[37mGET /genimage/0002 HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:23:54] "[37mGET /static/images/gen0002.jpg HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:23:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+106.18.147.130 - - [22/Nov/2019 12:23:59] "[37mGET /login HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:23:59] "[37mGET /static/images/bg_heng.jpg HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:24:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+106.18.147.130 - - [22/Nov/2019 12:24:19] "[37mGET /genimage/0002 HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:24:35] "[37mGET /static/images/gen0002.jpg HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:26:23] "[37mGET /login HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:26:23] "[37mGET /static/images/bg_heng.jpg HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:26:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+106.18.147.130 - - [22/Nov/2019 12:26:34] "[37mGET /genimage/0003 HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:26:34] "[37mGET /static/images/gen0003.jpg HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:26:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+101.91.60.11 - - [22/Nov/2019 12:27:34] "[37mGET /genimage/0003 HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:29:05] "[37mGET /login HTTP/1.1[0m" 200 -
+106.18.147.130 - - [22/Nov/2019 12:29:05] "[37mGET /static/images/bg_heng.jpg HTTP/1.1[0m" 200 -
