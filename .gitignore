@@ -1,0 +1,9 @@
+*.zip
+*.tar
+*.tar.gz
+/.vscode
+/bin
+/pkg
+/static/images/
+!static/images/bg_col.jpg
+!static/images/bg_row.jpg
