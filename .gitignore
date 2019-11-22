@@ -5,6 +5,6 @@
 /bin
 /pkg
 /static/images/
-!static/images/bg_col.jpg
-!static/images/bg_row.jpg
+!/static/images/bg_col.jpg
+!/static/images/bg_row.jpg
 *.txt
