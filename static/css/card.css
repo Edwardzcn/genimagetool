@@ -28,6 +28,22 @@
     vertical-align: top;
 }
 
+#card1{
+    display: inline-block;
+}
+#card2{
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    #card1{
+        display: none;
+    }
+    #card2{
+        display: inline-block;
+    }
+}
+
 @media (min-width: 576px) {
     #myform {
         font-size: 14px;

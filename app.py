@@ -50,7 +50,8 @@ def log_in():
         if check_length(studentid) is True:
             num, find = check_num(studentid)
             print(num, find)
-            imageWriter("./static/images/bg_heng.jpg", num)
+            imageWriterRow("./static/images/bg_row.jpg", num)
+            imageWriterCol("./static/images/bg_col.jpg", num)
             return redirect('/genimage/'+"%04d" % num)
         else:
             render_template('index.html', idwrong=False)
@@ -76,7 +77,7 @@ def check_num(studentid):
     return id_dict[studentid], find
 
 
-def imageWriter(filePath, number):
+def imageWriterRow(filePath, number):
     strnumber = "%04d" % number
     print(strnumber)
     img = Image.open(filePath)
@@ -89,7 +90,23 @@ def imageWriter(filePath, number):
     # ttFont = ImageFont.truetype("arial.ttf", 120, encoding="unic")
     draw.text((size[0]/3*1.9, size[1]/3*1), strnumber,
               fill=(255, 255, 255), font=ttFont)
-    img.save("./static/images/gen" + strnumber + ".jpg", quality=95)
+    img.save("./static/images/gen_row_" + strnumber + ".jpg", quality=95)
+
+
+def imageWriterCol(filePath, number):
+    strnumber = "%04d" % number
+    print(strnumber)
+    img = Image.open(filePath)
+    size = img.size
+    # 确定大小
+    # fontSize = size[1] / 4
+    draw = ImageDraw.Draw(img)
+    # ttFont = ImageFont.truetype('ahronbd.ttf', 50)
+    ttFont = ImageFont.truetype("msyh.ttc", 60, encoding="unic")
+    draw.text((size[0]/3, size[1]/3*1.2), strnumber,
+              fill=(255, 255, 255), font=ttFont)
+    img.save("./static/images/gen_col_" + strnumber + ".jpg", quality=95)
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8080)
