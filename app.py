@@ -13,6 +13,7 @@ id_dict = {}
 
 """
 
+
 @app.route('/')
 def home():
     return render_template('index.html', title="Choose Your Number")
@@ -20,10 +21,6 @@ def home():
 
 @app.route('/genimage/<gen_id>')
 def gen_image(gen_id):
-
-    # img_path = 'Googlelogo.png'
-    # img_stream = return_img_stream(img_path)
-    # return "Gello"
     return render_template('genimage.html', gen_id=gen_id)
 
 
@@ -35,7 +32,6 @@ def log_in():
         studentid = request.form.get('studentid')
         if check_length(studentid) is True:
             num, find = check_num(studentid)
-            print(num, find)
             imageWriterRow("./static/images/bg_row.jpg", num)
             imageWriterCol("./static/images/bg_col.jpg", num)
             return redirect('/genimage/'+"%04d" % num)
@@ -55,7 +51,16 @@ def check_length(studentid):
         return False
 
 
+# def create_dict(dic_path): {
+#     file = open('test.txt', 'r')
+#     for line in file:
+#         print(line)
+#     file.close()
+# }
+
+
 def check_num(studentid):
+    # id_dict = create_dict(dic_path)
     find = studentid in id_dict
     length = len(id_dict)
     if find is False:

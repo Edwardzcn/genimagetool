@@ -7,21 +7,10 @@ Generate A Number
 
 {% block content %}
 {{super()}}
-<!-- <div class="container"> -->
-    <!-- <div class="jumbotron"> -->
-    <!-- <div class="card"> -->
-        <!-- <div style="position: absolute;" id="myimg"> -->
-        <!-- <img src="{{ url_for('static', filename= './images/bg_heng.jpg') }}" width="95%"> -->
-        <!-- </div> -->
-        <!-- <div style="position: absolute;" id="myform"> -->
-        <!-- <div id="myform"> -->
-        <!-- </div> -->
-    <!-- </div> -->
-<!-- </div> -->
 
 <div class="container">
     <div class="jumbotron">
-        <h2>This is index</h2>
+        <h2 style="text-align: center;">你的专属门票</h2>
         <form class="form-horizontal" role="form" method="post">
             <div class="form-group">
                 <!-- <label class="col-sm-2 control-label">学号</label> -->
@@ -37,12 +26,11 @@ Generate A Number
 
             <div class="form-group">
                 <div class="col-sm-offset-5 col-sm-10">
-                    <button type="submit" class="btn btn-success">生成号码</button>
+                    <button type="submit" class="btn btn-success">生成门票</button>
                 </div>
             </div>
         </form>
-        <p>For more...</p>
-        
+
     </div>
 </div>
 

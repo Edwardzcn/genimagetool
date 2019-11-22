@@ -4,7 +4,8 @@
 /.vscode
 /bin
 /pkg
-/static/images/
+/static/images/*.jpg
+/static/images/*.png
 !/static/images/bg_col.jpg
 !/static/images/bg_row.jpg
 *.txt
