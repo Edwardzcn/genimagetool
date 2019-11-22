@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 from flask import Flask
 from flask import render_template, request,  redirect
 from PIL import Image, ImageDraw, ImageFont
@@ -83,8 +85,11 @@ def imageWriter(filePath, number):
     # fontSize = size[1] / 4
     draw = ImageDraw.Draw(img)
     # ttFont = ImageFont.truetype('ahronbd.ttf', 50)
-    # ttFont = ImageFont.truetype("simsun.ttc", 50, encoding="unic")
-    ttFont = ImageFont.truetype("arial.ttf", 120, encoding="unic")
+    ttFont = ImageFont.truetype("msyh.ttc", 120, encoding="unic")
+    # ttFont = ImageFont.truetype("arial.ttf", 120, encoding="unic")
     draw.text((size[0]/3*1.9, size[1]/3*1), strnumber,
               fill=(255, 255, 255), font=ttFont)
     img.save("./static/images/gen" + strnumber + ".jpg", quality=95)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)
